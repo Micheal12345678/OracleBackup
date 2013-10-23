@@ -141,10 +141,10 @@ namespace OracleBackup
         /// <param name="e"></param>
         private void btnFilePath_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtTableSpace.Text)) {
-                MessageBox.Show("请先填写【表空间】名称");
-                return;
-            }
+            //if (string.IsNullOrEmpty(txtTableSpace.Text)) {
+            //    MessageBox.Show("请先填写【表空间】名称");
+            //    return;
+            //}
             if (fbdPath.ShowDialog() == DialogResult.OK)
             {
                 string path = fbdPath.SelectedPath;
@@ -153,9 +153,9 @@ namespace OracleBackup
                     path = path.Substring(0, path.Length - 1);
                 }
                 txtFilePath.Text = path;
-                txtFilePath.Text += "\\" + GetBackupFileName("dmp");
-                strBackupPath = path + "\\" + GetBackupFileName("dmp");
-                strLogPath = path + "\\" + GetBackupFileName("log");
+                //txtFilePath.Text += "\\" + GetBackupFileName("dmp");
+                //strBackupPath = path + "\\" + GetBackupFileName("dmp");
+                //strLogPath = path + "\\" + GetBackupFileName("log");
             }
 
         }
@@ -253,18 +253,18 @@ namespace OracleBackup
         /// <param name="e"></param>
         private void txtTableSpace_TextChanged(object sender, EventArgs e)
         {
-            if (txtFilePath.Text.Length > 0)
-            {
-                string path = fbdPath.SelectedPath;
-                if (path.LastIndexOf('\\') == path.Length - 1)
-                {
-                    path = path.Substring(0, path.Length - 1);
-                }
-                txtFilePath.Text = path;
-                txtFilePath.Text += "\\" + GetBackupFileName("dmp");
-                strBackupPath = path + "\\" + GetBackupFileName("dmp");
-                strLogPath = path + "\\" + GetBackupFileName("log");
-            }
+            //if (txtFilePath.Text.Length > 0)
+            //{
+            //    string path = fbdPath.SelectedPath;
+            //    if (path.LastIndexOf('\\') == path.Length - 1)
+            //    {
+            //        path = path.Substring(0, path.Length - 1);
+            //    }
+            //    txtFilePath.Text = path;
+            //    txtFilePath.Text += "\\" + GetBackupFileName("dmp");
+            //    strBackupPath = path + "\\" + GetBackupFileName("dmp");
+            //    strLogPath = path + "\\" + GetBackupFileName("log");
+            //}
         }
 
 
@@ -333,15 +333,7 @@ namespace OracleBackup
             return true;
         }
 
-        private string GetBackupFileName(string filetype)
-        {
-            int year = DateTime.Now.Year;
-            int month = DateTime.Now.Month;
-            int day = DateTime.Now.Day;
-            string datePart = year.ToString() + month.ToString() + day.ToString();
-            string fileName = txtTableSpace.Text + "_" + datePart + "." + filetype;
-            return fileName;
-        }
+       
 
 
         

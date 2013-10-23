@@ -11,3 +11,15 @@ D:\OracleBackup\OracleBackup\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.exe
 D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.pdb
 D:\OracleBackup\OracleBackup\bin\Debug\System.Data.OracleClient.dll
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\bin\Debug\OracleBackup.exe.config
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.exe
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.pdb
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\bin\Debug\OracleBackup.exe
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\bin\Debug\OracleBackup.pdb
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.frmBackupAdd.resources
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.frmBackupDetail.resources
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.frmBackupLog.resources
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.Properties.Resources.resources
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\shouan.xu\Documents\GitHub\OracleBackup\OracleBackup\obj\x86\Debug\GenerateResource.write.1.tlog

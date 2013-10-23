@@ -1,0 +1,32 @@
+﻿检测数据库连接
+
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+数据库连接测试通过
+
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+数据库连接测试通过
+
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+数据库连接测试通过
+
+经过检测，开始对下列数据库实例进行备份：
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+
+开始执行备份:
+
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+开始执行对空表的内存分配
+失败执行：alter table SYSACTIVITYINSTANCE allocate extent
+未能备份数据
+
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+开始执行对空表的内存分配
+失败执行：alter table SYSACTIVITYINSTANCE allocate extent
+未能备份数据
+
+Server IP:192.168.13.170:1521   UserID:orcl_mqxt
+开始执行对空表的内存分配
+失败执行：alter table SYSACTIVITYINSTANCE allocate extent
+未能备份数据

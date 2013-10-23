@@ -5,6 +5,7 @@ using System.Text;
 using System.Data;
 using System.Data.OracleClient;
 using System.Windows.Forms;
+using System.IO;
 
 namespace OracleBackup.Tool
 {
@@ -38,7 +39,7 @@ namespace OracleBackup.Tool
             }
             catch (Exception ee)
             {
-                log += "异常：" + ee.Message + "\r\n";
+                log += "连接数据库异常：" + ee.Message + "\r\n";
                 return false;
             }
             return false;
@@ -66,7 +67,7 @@ namespace OracleBackup.Tool
             }
             catch (Exception ee)
             {
-                log += "异常：" + ee.Message + "\r\n";  
+                log += "获取SQL异常：" + ee.Message + "\r\n";  
             }
             return null;
         }
@@ -105,7 +106,7 @@ namespace OracleBackup.Tool
                         {
                             //如果发生错误，就继续执行
                             log += "失败执行：" + sql + "\r\n";
-                            continue;
+                            return false;
                         }
                     }
                     return true;
@@ -119,7 +120,7 @@ namespace OracleBackup.Tool
             }
             catch (Exception ee)
             {
-                log += "异常：" + ee.Message + "\r\n";
+                log += "执行SQL异常：" + ee.Message + "\r\n";
             }
             return false;
         }
@@ -129,13 +130,24 @@ namespace OracleBackup.Tool
         {
             try
             {
+                //新建当天的备份文件夹
+                string folderName = DateTime.Now.ToString("yyyy-MM-dd");
+                string folderPath = backupItem.BackupPath + "\\"+folderName;
+                //如果不存在就不创建
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                //拼凑保存的文件名
                 //处理日志文件路径
-                string logPath = backupItem.BackupPath.Remove(backupItem.BackupPath.LastIndexOf('.')) + ".log";
+                string backupPath = folderPath + "\\" + GetBackupFileName(backupItem.TableSpace, "dmp");
+                string logPath = folderPath + "\\" + GetBackupFileName(backupItem.TableSpace, "log");
 
                 //备份数据库脚本
                 StringBuilder sb = new StringBuilder();
                 sb.Append(" exp " + backupItem.UserID + "/" + backupItem.UserPwd + "@" + backupItem.ServerName);
-                sb.Append(" file=" + backupItem.BackupPath);
+                sb.Append(" file=" + backupPath);
                 sb.Append(" consistent=y direct=y ");
                 sb.Append(" log=" + logPath);
 
@@ -144,11 +156,19 @@ namespace OracleBackup.Tool
             }
             catch (Exception ee)
             {
-                log += "异常：" + ee.Message + "\r\n";
+                log += "执行备份异常：" + ee.Message + "\r\n";
             }
         }
 
 
-       
+        private static string GetBackupFileName(string filename,string filetype)
+        {
+            int year = DateTime.Now.Year;
+            int month = DateTime.Now.Month;
+            int day = DateTime.Now.Day;
+            string datePart = year.ToString() + month.ToString() + day.ToString();
+            string fileName = filename + "_" + datePart + "." + filetype;
+            return fileName;
+        }
     }
 }
