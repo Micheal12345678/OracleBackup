@@ -1,0 +1,12 @@
+E:\项目资料\0008-检务通系统\03_开发\ProcessTools\ProcessImport\Dal\bin\Debug\Dal.dll
+E:\项目资料\0008-检务通系统\03_开发\ProcessTools\ProcessImport\Dal\bin\Debug\Dal.pdb
+E:\项目资料\0008-检务通系统\03_开发\ProcessTools\ProcessImport\Dal\bin\Debug\Model.dll
+E:\项目资料\0008-检务通系统\03_开发\ProcessTools\ProcessImport\Dal\bin\Debug\Model.pdb
+E:\项目资料\0008-检务通系统\03_开发\ProcessTools\ProcessImport\Dal\obj\Debug\ResolveAssemblyReference.cache
+E:\项目资料\0008-检务通系统\03_开发\ProcessTools\ProcessImport\Dal\obj\Debug\Dal.dll
+E:\项目资料\0008-检务通系统\03_开发\ProcessTools\ProcessImport\Dal\obj\Debug\Dal.pdb
+D:\OracleBackup\Dal\obj\Debug\ResolveAssemblyReference.cache
+D:\OracleBackup\Dal\obj\Debug\Dal.dll
+D:\OracleBackup\Dal\obj\Debug\Dal.pdb
+D:\OracleBackup\Dal\bin\Debug\Dal.dll
+D:\OracleBackup\Dal\bin\Debug\Dal.pdb

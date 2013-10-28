@@ -1,0 +1,13 @@
+D:\OracleBackup\OracleBackup\bin\Debug\OracleBackup.exe.config
+D:\OracleBackup\OracleBackup\bin\Debug\OracleBackup.exe
+D:\OracleBackup\OracleBackup\bin\Debug\OracleBackup.pdb
+D:\OracleBackup\OracleBackup\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.frmBackupAdd.resources
+D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.frmBackupDetail.resources
+D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.frmBackupLog.resources
+D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.Properties.Resources.resources
+D:\OracleBackup\OracleBackup\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\OracleBackup\OracleBackup\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.exe
+D:\OracleBackup\OracleBackup\obj\x86\Debug\OracleBackup.pdb
+D:\OracleBackup\OracleBackup\bin\Debug\System.Data.OracleClient.dll
